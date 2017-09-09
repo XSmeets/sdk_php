@@ -47,35 +47,6 @@ class DraftPaymentEntry extends BunqModel
     protected $attachment;
 
     /**
-     * Whether or not sending a bunq.to payment is allowed.
-     *
-     * @var bool
-     */
-    protected $allowBunqto;
-
-    /**
-     * The id of the draft payment entry.
-     *
-     * @var int
-     */
-    protected $id;
-
-    /**
-     * The LabelMonetaryAccount containing the public information of 'this'
-     * (party) side of the DraftPayment.
-     *
-     * @var LabelMonetaryAccount
-     */
-    protected $alias;
-
-    /**
-     * The type of the draft payment entry.
-     *
-     * @var string
-     */
-    protected $type;
-
-    /**
      * @param Amount $amount
      * @param Pointer $counterpartyAlias
      * @param string $description
